@@ -5,7 +5,7 @@ import admin from '../middleware/admin';
 
 const router = express.Router();
 
-router.get('/search', auth, searchSweets); // Must be before /:id to avoid conflict
+router.get('/search', auth, searchSweets);
 router.get('/', auth, getSweets);
 router.post('/', [auth, admin], createSweet);
 router.put('/:id', [auth, admin], updateSweet);

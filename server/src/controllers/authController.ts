@@ -5,7 +5,7 @@ import User from '../models/User';
 
 export const register = async (req: Request, res: Response) => {
     try {
-        const { email, password } = req.body;
+        const { email, password, role } = req.body;
 
         let user = await User.findOne({ email });
         if (user) {
@@ -18,6 +18,7 @@ export const register = async (req: Request, res: Response) => {
         user = new User({
             email,
             password: hashedPassword,
+            role: role || 'CUSTOMER'
         });
 
         await user.save();

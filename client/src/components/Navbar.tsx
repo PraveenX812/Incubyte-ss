@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
-import { Candy, LogOut, ShoppingBag, Shield } from 'lucide-react';
+import { Candy, LogOut, Shield } from 'lucide-react';
 
 const Navbar = () => {
     const { isAuthenticated, user, logout } = useContext(AuthContext);
@@ -24,9 +24,6 @@ const Navbar = () => {
             <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
                 {isAuthenticated ? (
                     <>
-                        <Link to="/" style={{ color: 'white', textDecoration: 'none', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-                            <ShoppingBag size={20} /> Shop
-                        </Link>
 
                         {user?.role === 'ADMIN' && (
                             <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#fbbf24', fontSize: '0.9rem', border: '1px solid #fbbf24', padding: '0.25rem 0.5rem', borderRadius: '4px' }}>

@@ -2,19 +2,19 @@
 
 A full-stack Sweet Shop Management System built with **MERN Stack** (MongoDB, Express, React, Node.js) + TypeScript.
 
-## 🚀 Features
+##  Features
 - **Authentication**: Secure JWT-based registration and login.
 - **Role-Based Access**: Admins can manage inventory; Customers can shop.
 - **Inventory Management**: Real-time stock tracking, preventing overselling.
 - **Search & Filter**: Find sweets by name, category, or price range.
 - **Modern UI/UX**: Responsive "Glassmorphism" dark theme using Vanilla CSS + React.
 
-## 🛠 Tech Stack
+##  Tech Stack
 - **Frontend**: React, Vite, TypeScript, Axios, React Router, Lucide Icons.
 - **Backend**: Node.js, Express, TypeScript, MongoDB.
 - **Testing**: Jest, Supertest (Backend TDD).
 
-## 🏃‍♂️ How to Run
+##  How to Run
 
 ### Prerequisites
 - Node.js (v18+)
